@@ -1,5 +1,5 @@
 //
-//  FlurryService.swift
+//  ParseService.swift
 //  Analytics
 //
 //  Created by Seth on 2/23/17.
@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import SimpleAnalytics
 
 /// Contains and defines any actions or configurations that should happen in order
-/// to report analytics events to the Flurry SDK.
-class FlurryAnalyticsService: AnalyticsService {
+/// to report analytics events to the Parse SDK.
+class ParseAnalyticsService: AnalyticsService {
     
     init(config: AnalyticsConfigurationProvider) {
         // TODO: Configure service

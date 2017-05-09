@@ -10,7 +10,7 @@ import Foundation
 
 
 /// This describes analytics events related to the app lifecycle.
-enum AnalyticsAppEvent: AnalyticsEvent {
+public enum AnalyticsAppEvent: AnalyticsEvent {
     
     case didLaunch
     case willResignActive
@@ -21,19 +21,19 @@ enum AnalyticsAppEvent: AnalyticsEvent {
     
     case systemEvent(name: String)
     
-    var category: String {
+    public var category: String {
         return "APP_EVENT"
     }
     
-    var action: String {
+    public var action: String {
         return "SYSTEM_ACTION"
     }
     
-    var label: String {
+    public var label: String {
         return "App Event"
     }
     
-    var value: Any {
+    public var value: Any {
         switch self {
         case .didLaunch:
             return "Application Did Launch"

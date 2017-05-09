@@ -12,7 +12,7 @@ import Foundation
 /// Defines an interface for an object providing configuration data
 /// to an analytics service.
 /// E.G. A Facebook/Google/Flurry/Etc provider ID and secret key
-protocol AnalyticsConfigurationProvider {
+public protocol AnalyticsConfigurationProvider {
     
     /// Describes a provider identifier for an analytics processing service
     var providerId: String { get }

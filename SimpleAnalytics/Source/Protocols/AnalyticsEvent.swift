@@ -12,7 +12,7 @@ import Foundation
 /// Describes values that any given analytics event should have for proper reporting of analytics events
 /// to analytics processing services. In some cases not all fields might be used and passing empty strings
 /// or values is acceptable.
-protocol AnalyticsEvent {
+public protocol AnalyticsEvent {
     var category: String { get }
     var action: String { get }
     var label: String { get }
@@ -22,7 +22,7 @@ protocol AnalyticsEvent {
     func toDictionary() -> [String : Any]
 }
 
-extension AnalyticsEvent {
+public extension AnalyticsEvent {
     
     /// Since we're currently using an analytics singleton object for reporting, we implement a default 'log()'
     /// function here. In this way we can call MyEventName.log() and the call will automatically be fired off

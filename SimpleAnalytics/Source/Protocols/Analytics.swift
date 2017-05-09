@@ -15,7 +15,7 @@ import Foundation
     or pass the event to an analytics reporting service to handle.
  
  */
-protocol Analytics {
+public protocol Analytics {
     
     /// Provides top level processing for analytics events.
     ///
@@ -27,6 +27,7 @@ protocol Analytics {
     /// services like Google/Facebook/Flurry/etc.
     ///
     /// - Parameter services: A list of services that will be setup to process analytics events.
-    func configure(with services: AnalyticsServices...)
+    func configure(with services: [AnalyticsService])
+//    func configure(with services: AnalyticsServices...)
 }
 

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SimpleAnalytics
 
 /// This is a convenience class to contain and provide all services that can be called on
 /// to provide analytics event processing. To setup a new service, add a case to the enum
@@ -34,6 +35,20 @@ enum AnalyticsServices {
         case .simple:
             return SimpleLoggingService()
         }
+    }
+    
+    
+    /// Creates instances of analytics services that will be passed to the AnalyticsProvider
+    /// for processing analytics events.
+    ///
+    /// - Parameter list: A list of AnalyticsServices cases.
+    /// - Returns: A configured array of AnalyticsService instances for processing events.
+    static func configuredListeners(list: AnalyticsServices...) -> [AnalyticsService] {
+        var configured = [AnalyticsService]()
+        for service in list {
+            configured.append(service.instance)
+        }
+        return configured
     }
     
 }

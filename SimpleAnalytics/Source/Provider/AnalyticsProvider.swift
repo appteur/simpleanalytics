@@ -10,7 +10,7 @@ import Foundation
 
 /// This is the main hub for managing multiple analytics services and passing analytics events
 /// to the configured services.
-class AnalyticsProvider: Analytics {
+public class AnalyticsProvider: Analytics {
     
     /// This is a singleton instance for analytics reporting, although it does not have to be.
     public static let shared: Analytics = AnalyticsProvider()
@@ -24,10 +24,9 @@ class AnalyticsProvider: Analytics {
     ///
     /// - Parameter services: A list of services to setup and add to our services list to provide analytics
     /// processing when analytics events are fired.
-    func configure(with services: AnalyticsServices...) {
-        for service in services {
-            self.services.append(service.instance)
-        }
+    public func configure(with services: [AnalyticsService]) {
+        self.services.removeAll()
+        self.services.append(contentsOf: services)
     }
     
     
@@ -35,7 +34,7 @@ class AnalyticsProvider: Analytics {
     /// get passed to each of the registered services for processing and reporting.
     ///
     /// - Parameter event: An analytics event describing some action or event occurring in the app.
-    func log(event: AnalyticsEvent) {
+    public func log(event: AnalyticsEvent) {
         // pass event to all registered services for processing
         for service in services {
             service.process(event: event)

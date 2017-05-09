@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SimpleAnalytics
 
 /// Contains and defines any actions or configurations that should happen in order
 /// to report analytics events to the Google Analytics SDK.

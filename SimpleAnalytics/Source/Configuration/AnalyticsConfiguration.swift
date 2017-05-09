@@ -13,14 +13,14 @@ import Foundation
 /// For instance, Google/Facebook/Flurry/etc may require providerId's or secretKey's in
 /// order to report events. Those identifiers or configuration details should be added to
 /// this enum to encapsulate configuration requirements.
-enum AnalyticsConfiguration: AnalyticsConfigurationProvider {
+public enum AnalyticsConfiguration: AnalyticsConfigurationProvider {
     case google
     case facebook
     case firebase
     case flurry
     case parse
     
-    var providerId: String {
+    public var providerId: String {
         switch self {
         case .google:   return "google identifier"
         case .facebook: return "facebook identifier"
@@ -30,7 +30,7 @@ enum AnalyticsConfiguration: AnalyticsConfigurationProvider {
         }
     }
     
-    var secretKey: String {
+    public var secretKey: String {
         switch self {
         default: return ""
         }

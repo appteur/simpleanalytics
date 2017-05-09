@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SimpleAnalytics/Source/**/*'
 
+#s.dependency 'Google/Analytics'
 end

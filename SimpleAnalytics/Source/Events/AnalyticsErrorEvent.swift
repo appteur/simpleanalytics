@@ -10,25 +10,25 @@ import Foundation
 
 /// This describes analytics events related to errors that occur within the app
 /// that are desired to be reported to an analytics service.
-enum AnalyticsErrorEvent: AnalyticsEvent {
+public enum AnalyticsErrorEvent: AnalyticsEvent {
     
     case apiError(description: String)
     case logicError(description: String)
     
     
-    var category: String {
+    public var category: String {
         return "ERROR"
     }
     
-    var action: String {
+    public var action: String {
         return "ERROR"
     }
     
-    var label: String {
+    public var label: String {
         return "Error Description"
     }
     
-    var value: Any {
+    public var value: Any {
         switch self {
         case .logicError(let description):
             return "\(description)"

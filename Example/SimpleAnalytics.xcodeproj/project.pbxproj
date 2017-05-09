@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		246ED24E58BD840EE18A1CCA /* Pods_SimpleAnalytics_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E1AF71B6E8A772BBCC0E1A /* Pods_SimpleAnalytics_Example.framework */; };
+		5D8929371EC2410B002E7855 /* AnalyticsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929301EC2410B002E7855 /* AnalyticsServices.swift */; };
+		5D8929381EC2410B002E7855 /* FacebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929321EC2410B002E7855 /* FacebookService.swift */; };
+		5D8929391EC2410B002E7855 /* FlurryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929331EC2410B002E7855 /* FlurryService.swift */; };
+		5D89293A1EC2410B002E7855 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929341EC2410B002E7855 /* GoogleService.swift */; };
+		5D89293B1EC2410B002E7855 /* ParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929351EC2410B002E7855 /* ParseService.swift */; };
+		5D89293C1EC2410B002E7855 /* SimpleLoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929361EC2410B002E7855 /* SimpleLoggingService.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +36,13 @@
 /* Begin PBXFileReference section */
 		39C73E9C8B9E96F1F5EE2DFA /* Pods-SimpleAnalytics_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAnalytics_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleAnalytics_Tests/Pods-SimpleAnalytics_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		58A079EABF49650FD7319F9A /* Pods-SimpleAnalytics_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAnalytics_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleAnalytics_Tests/Pods-SimpleAnalytics_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5D89292C1EC23CFE002E7855 /* Analytics_Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Analytics_Bridging_Header.h; sourceTree = "<group>"; };
+		5D8929301EC2410B002E7855 /* AnalyticsServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsServices.swift; sourceTree = "<group>"; };
+		5D8929321EC2410B002E7855 /* FacebookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookService.swift; sourceTree = "<group>"; };
+		5D8929331EC2410B002E7855 /* FlurryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlurryService.swift; sourceTree = "<group>"; };
+		5D8929341EC2410B002E7855 /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
+		5D8929351EC2410B002E7855 /* ParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseService.swift; sourceTree = "<group>"; };
+		5D8929361EC2410B002E7855 /* SimpleLoggingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLoggingService.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleAnalytics_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAnalytics_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +53,12 @@
 		607FACE51AFB9204008FA782 /* SimpleAnalytics_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAnalytics_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6AD931B008AC978AF1FEDEAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6AD931B008AC978AF1FEDEAC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		87CF1618BAD85E5994955873 /* Pods-SimpleAnalytics_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAnalytics_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleAnalytics_Example/Pods-SimpleAnalytics_Example.release.xcconfig"; sourceTree = "<group>"; };
 		92E1AF71B6E8A772BBCC0E1A /* Pods_SimpleAnalytics_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAnalytics_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		97E41FCDBBAF9604191CA70D /* SimpleAnalytics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SimpleAnalytics.podspec; path = ../SimpleAnalytics.podspec; sourceTree = "<group>"; };
+		97E41FCDBBAF9604191CA70D /* SimpleAnalytics.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleAnalytics.podspec; path = ../SimpleAnalytics.podspec; sourceTree = "<group>"; };
 		ABAD106AE2596715539AE5EC /* Pods_SimpleAnalytics_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAnalytics_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C84E12814D6734E0D8C845D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C84E12814D6734E0D8C845D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F240EBCD341DF81191C8A3D3 /* Pods-SimpleAnalytics_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAnalytics_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleAnalytics_Example/Pods-SimpleAnalytics_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,11 +91,50 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5D89292D1EC2410B002E7855 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5D89292E1EC2410B002E7855 /* Analytics */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5D89292E1EC2410B002E7855 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				5D89292F1EC2410B002E7855 /* Services */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		5D89292F1EC2410B002E7855 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5D8929301EC2410B002E7855 /* AnalyticsServices.swift */,
+				5D8929311EC2410B002E7855 /* ServiceProviders */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D8929311EC2410B002E7855 /* ServiceProviders */ = {
+			isa = PBXGroup;
+			children = (
+				5D8929321EC2410B002E7855 /* FacebookService.swift */,
+				5D8929331EC2410B002E7855 /* FlurryService.swift */,
+				5D8929341EC2410B002E7855 /* GoogleService.swift */,
+				5D8929351EC2410B002E7855 /* ParseService.swift */,
+				5D8929361EC2410B002E7855 /* SimpleLoggingService.swift */,
+			);
+			path = ServiceProviders;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				5D89292C1EC23CFE002E7855 /* Analytics_Bridging_Header.h */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for SimpleAnalytics */,
+				5D89292D1EC2410B002E7855 /* Source */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				E09E75A54100E2C1B388C51A /* Pods */,
@@ -215,6 +267,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GU9878X2D5;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -362,7 +415,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5D8929391EC2410B002E7855 /* FlurryService.swift in Sources */,
+				5D89293A1EC2410B002E7855 /* GoogleService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5D8929371EC2410B002E7855 /* AnalyticsServices.swift in Sources */,
+				5D8929381EC2410B002E7855 /* FacebookService.swift in Sources */,
+				5D89293B1EC2410B002E7855 /* ParseService.swift in Sources */,
+				5D89293C1EC2410B002E7855 /* SimpleLoggingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -483,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -496,11 +555,14 @@
 			baseConfigurationReference = F240EBCD341DF81191C8A3D3 /* Pods-SimpleAnalytics_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GU9878X2D5;
 				INFOPLIST_FILE = SimpleAnalytics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Analytics_Bridging_Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -510,11 +572,14 @@
 			baseConfigurationReference = 87CF1618BAD85E5994955873 /* Pods-SimpleAnalytics_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GU9878X2D5;
 				INFOPLIST_FILE = SimpleAnalytics/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Analytics_Bridging_Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
