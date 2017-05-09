@@ -11,7 +11,7 @@ import SimpleAnalytics
 
 /// This describes analytics events that are related to page navigation within the app.
 /// Additional pages/cases can be added as needed/desired.
-public enum AnalyticsPageView: AnalyticsEvent {
+public enum AnalyticsAppPageView: AnalyticsEvent {
     
     case onboardFirstPage
     case onboardSecondPage

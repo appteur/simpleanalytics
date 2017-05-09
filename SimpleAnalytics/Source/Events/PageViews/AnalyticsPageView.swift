@@ -8,8 +8,22 @@
 
 import Foundation
 
-/// This describes analytics events that are related to page navigation within the app.
-/// Additional pages/cases can be added as needed/desired.
+/** 
+    This describes analytics events that are related to page navigation within the app.
+    This enum provides general event reporting related to page views. If desired you can create
+    an enum that conforms to AnalyticsEvent and provide detailed cases for each page.
+ 
+    Example:
+ 
+    enum MyAppPagesAnalytics {
+        case login
+        case signup
+ 
+        // implement vars category/action/label/value
+    }
+ 
+    Then you can report those events by calling MyAppPagesAnalytics.login.log() to fire analytics events.
+ */
 public enum AnalyticsPageView: AnalyticsEvent {
     
     // takes page name and any value to pass with it

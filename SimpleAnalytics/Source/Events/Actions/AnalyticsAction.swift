@@ -1,13 +1,12 @@
 //
 //  AnalyticsAction.swift
-//  Analytics
+//  SimpleAnalytics
 //
-//  Created by Seth on 2/23/17.
-//  Copyright © 2017 Arnott Industries, Inc. All rights reserved.
+//  Created by Seth on 5/9/17.
+//
 //
 
 import Foundation
-import SimpleAnalytics
 
 /// This describes analytics events related to user actions throughout the app.
 /// The 'general' event below can be used, but specific action cases should be added
