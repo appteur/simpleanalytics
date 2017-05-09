@@ -1,11 +1,18 @@
+platform :ios, '9.0'
 use_frameworks!
 
+source "https://github.com/CocoaPods/Specs.git"
+
 target 'SimpleAnalytics_Example' do
-  pod 'SimpleAnalytics', :path => '../'
-
-  target 'SimpleAnalytics_Tests' do
     inherit! :search_paths
-
     
-  end
+    pod 'SimpleAnalytics', :path => '../'
+    pod 'Google/Analytics'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+  
+    target 'SimpleAnalytics_Tests' do
+        inherit! :search_paths
+    end
+
 end
