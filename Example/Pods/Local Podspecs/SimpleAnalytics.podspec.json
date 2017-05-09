@@ -1,0 +1,22 @@
+{
+  "name": "SimpleAnalytics",
+  "version": "0.1.0",
+  "summary": "A short description of SimpleAnalytics.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/git/SimpleAnalytics",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "git": "seth.arnott@mobileforming.com"
+  },
+  "source": {
+    "git": "https://github.com/git/SimpleAnalytics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SimpleAnalytics/Classes/**/*"
+}

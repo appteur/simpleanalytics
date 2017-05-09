@@ -1,0 +1,16 @@
+PODS:
+  - SimpleAnalytics (0.1.0)
+
+DEPENDENCIES:
+  - SimpleAnalytics (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleAnalytics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleAnalytics: e5529c34c1cc280ad9dee0348a76e9f551019f46
+
+PODFILE CHECKSUM: 206cc6b90c4ae5cb33ee794c23a39221ea12ac3c
+
+COCOAPODS: 1.1.1
