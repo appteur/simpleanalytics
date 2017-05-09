@@ -14,6 +14,8 @@
 		5D89293A1EC2410B002E7855 /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929341EC2410B002E7855 /* GoogleService.swift */; };
 		5D89293B1EC2410B002E7855 /* ParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929351EC2410B002E7855 /* ParseService.swift */; };
 		5D89293C1EC2410B002E7855 /* SimpleLoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929361EC2410B002E7855 /* SimpleLoggingService.swift */; };
+		5D8929461EC2510F002E7855 /* AnalyticsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D89293F1EC2510F002E7855 /* AnalyticsAction.swift */; };
+		5D8929491EC2510F002E7855 /* AnalyticsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8929451EC2510F002E7855 /* AnalyticsPageView.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		5D8929341EC2410B002E7855 /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
 		5D8929351EC2410B002E7855 /* ParseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseService.swift; sourceTree = "<group>"; };
 		5D8929361EC2410B002E7855 /* SimpleLoggingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLoggingService.swift; sourceTree = "<group>"; };
+		5D89293F1EC2510F002E7855 /* AnalyticsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsAction.swift; sourceTree = "<group>"; };
+		5D8929451EC2510F002E7855 /* AnalyticsPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsPageView.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleAnalytics_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAnalytics_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		5D89292E1EC2410B002E7855 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				5D89293D1EC2510F002E7855 /* Events */,
 				5D89292F1EC2410B002E7855 /* Services */,
 			);
 			path = Analytics;
@@ -126,6 +131,31 @@
 				5D8929361EC2410B002E7855 /* SimpleLoggingService.swift */,
 			);
 			path = ServiceProviders;
+			sourceTree = "<group>";
+		};
+		5D89293D1EC2510F002E7855 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				5D89293E1EC2510F002E7855 /* Actions */,
+				5D8929441EC2510F002E7855 /* PageNavigation */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		5D89293E1EC2510F002E7855 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				5D89293F1EC2510F002E7855 /* AnalyticsAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		5D8929441EC2510F002E7855 /* PageNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				5D8929451EC2510F002E7855 /* AnalyticsPageView.swift */,
+			);
+			path = PageNavigation;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -415,7 +445,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5D8929491EC2510F002E7855 /* AnalyticsPageView.swift in Sources */,
 				5D8929391EC2410B002E7855 /* FlurryService.swift in Sources */,
+				5D8929461EC2510F002E7855 /* AnalyticsAction.swift in Sources */,
 				5D89293A1EC2410B002E7855 /* GoogleService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				5D8929371EC2410B002E7855 /* AnalyticsServices.swift in Sources */,

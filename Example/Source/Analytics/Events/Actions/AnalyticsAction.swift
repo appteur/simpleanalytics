@@ -7,11 +7,11 @@
 //
 
 import Foundation
+import SimpleAnalytics
 
 /// This describes analytics events related to user actions throughout the app.
 /// The 'general' event below can be used, but specific action cases should be added
-/// below in order to encapsulate action related data for action events all in this
-/// enum.
+/// in order to encapsulate action related data for action events.
 public enum AnalyticsAction: AnalyticsEvent {
     
     case general(action: String, label: String, value: Any)

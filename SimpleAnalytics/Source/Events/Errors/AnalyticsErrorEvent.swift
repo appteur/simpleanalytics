@@ -12,28 +12,30 @@ import Foundation
 /// that are desired to be reported to an analytics service.
 public enum AnalyticsErrorEvent: AnalyticsEvent {
     
-    case apiError(description: String)
-    case logicError(description: String)
-    
+    case genericError(action: String, label: String, value: Any)
     
     public var category: String {
-        return "ERROR"
+        return "GENERIC ERROR"
     }
     
     public var action: String {
-        return "ERROR"
+        switch self {
+        case .genericError(let action, _, _):
+            return action
+        }
     }
     
     public var label: String {
-        return "Error Description"
+        switch self {
+        case .genericError(_, let label, _):
+            return label
+        }
     }
     
     public var value: Any {
         switch self {
-        case .logicError(let description):
-            return "\(description)"
-        case .apiError(let description):
-            return "\(description)"
+        case .genericError(_, _, let value):
+            return "\(String(describing: value))"
         }
     }
 }

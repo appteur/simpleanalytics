@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 /// This describes analytics events related to the app lifecycle.
 public enum AnalyticsAppEvent: AnalyticsEvent {
     
