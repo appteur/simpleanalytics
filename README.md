@@ -22,7 +22,7 @@ pod "SimpleAnalytics"
 
 ## Author
 
-git, seth.arnott@mobileforming.com
+Seth Arnott
 
 ## License
 
