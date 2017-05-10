@@ -50,7 +50,7 @@ public extension AnalyticsEvent {
     }
     
     func toString() -> String {
-        var stringVers = "\(category):\(action);\(label)"
+        var stringVers = "\(category):\(action):\(label)"
         if let value = value {
             stringVers = stringVers+":"+String(describing:value)
         }
