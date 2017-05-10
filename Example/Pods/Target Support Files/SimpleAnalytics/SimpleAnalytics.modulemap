@@ -1,6 +1,0 @@
-framework module SimpleAnalytics {
-  umbrella header "SimpleAnalytics-umbrella.h"
-
-  export *
-  module * { export * }
-}
