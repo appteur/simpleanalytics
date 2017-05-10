@@ -32,7 +32,7 @@ public enum AnalyticsErrorEvent: AnalyticsEvent {
         }
     }
     
-    public var value: Any {
+    public var value: Any? {
         switch self {
         case .genericError(_, _, let value):
             return String(describing: value)

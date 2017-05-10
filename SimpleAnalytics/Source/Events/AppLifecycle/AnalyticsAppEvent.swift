@@ -21,31 +21,31 @@ public enum AnalyticsAppEvent: AnalyticsEvent {
     case systemEvent(name: String)
     
     public var category: String {
-        return "APP_EVENT"
+        return "APP"
     }
     
     public var action: String {
-        return "SYSTEM_ACTION"
+        return "SYSTEM"
     }
     
     public var label: String {
-        return "App Event"
+        return "LIFECYCLE"
     }
     
-    public var value: Any {
+    public var value: Any? {
         switch self {
         case .didLaunch:
-            return "Application Did Launch"
+            return "Launched"
         case .willResignActive:
-            return "Application Will Resign Active"
+            return "Resigning Active"
         case .didEnterBackground:
-            return "Application Did Enter Background"
+            return "Entered Background"
         case .willEnterForeground:
-            return "Application Will Enter Foreground"
+            return "Entering Foreground"
         case .didBecomeActive:
-            return "Application Did Become Active"
+            return "Became Active"
         case .willTerminate:
-            return "Application Will Terminate"
+            return "Terminating"
         case .systemEvent(let name):
             return "\(name)"
         }

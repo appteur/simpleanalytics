@@ -36,7 +36,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   SimpleAnalytics:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
@@ -52,4 +52,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: bb4fec271c6c97ead003f33dfc6510fa181d2584
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.0.1

@@ -16,10 +16,11 @@ public protocol AnalyticsEvent {
     var category: String { get }
     var action: String { get }
     var label: String { get }
-    var value: Any { get }
+    var value: Any? { get }
     
     func log()
     func toDictionary() -> [String : Any]
+    func toString() -> String
 }
 
 public extension AnalyticsEvent {
@@ -37,11 +38,22 @@ public extension AnalyticsEvent {
     ///
     /// - Returns: Converts the object to a dictionary representation.
     func toDictionary() -> [String : Any] {
-        return [
+        var dict = [
             "category" : category,
             "action" : action,
-            "label" : label,
-            "value" : value
+            "label" : label
         ]
+        if let value = value {
+            dict["value"] = String(describing:value)
+        }
+        return dict
+    }
+    
+    func toString() -> String {
+        var stringVers = "\(category):\(action);\(label)"
+        if let value = value {
+            stringVers = stringVers+":"+String(describing:value)
+        }
+        return stringVers
     }
 }

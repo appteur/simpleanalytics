@@ -30,7 +30,7 @@ public enum AnalyticsAppPageView: AnalyticsEvent {
         return "Page Name"
     }
     
-    public var value: Any {
+    public var value: Any? {
         switch self {
         case .onboardFirstPage:
             return "Onboard Intro Page"

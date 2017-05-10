@@ -33,7 +33,7 @@ public enum AnalyticsActionLoginPage: AnalyticsEvent {
         }
     }
     
-    public var value: Any {
+    public var value: Any? {
         switch self {
         case .tapLoginButton:
             return "1"

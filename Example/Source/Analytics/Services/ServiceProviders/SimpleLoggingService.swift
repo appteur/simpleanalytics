@@ -14,6 +14,6 @@ import SimpleAnalytics
 class SimpleLoggingService: AnalyticsService {
     
     func process(event: AnalyticsEvent) {
-        print("ANALYTICS EVENT: [Category: \(event.category)] - [Action: \(event.action)] - [Label: \(event.label)] - [Value: \(event.value)]")
+        print("ANALYTICS EVENT: [Category: \(event.category)] - [Action: \(event.action)] - [Label: \(event.label)] - [Value: \(String(describing: event.value))]")
     }
 }

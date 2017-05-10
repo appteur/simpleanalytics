@@ -33,7 +33,7 @@ public enum AnalyticsAction: AnalyticsEvent {
         }
     }
     
-    public var value: Any {
+    public var value: Any? {
         switch self {
         case .general(_, _, let value):
             return value

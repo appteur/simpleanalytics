@@ -57,7 +57,7 @@ class GoogleAnalyticsService: AnalyticsService {
     internal func processPageView(event: AnalyticsPageView) {
         
         if let tracker = tracker {
-            tracker.set(kGAIScreenName, value: "\(event.value)")
+            tracker.set(kGAIScreenName, value: "\(String(describing: event.value))")
             let build = GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject]
             tracker.send(build)
         }

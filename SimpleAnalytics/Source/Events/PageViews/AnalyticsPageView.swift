@@ -44,7 +44,7 @@ public enum AnalyticsPageView: AnalyticsEvent {
         }
     }
     
-    public var value: Any {
+    public var value: Any? {
         switch self {
         case .named(_, let value):
             return String(describing: value)
