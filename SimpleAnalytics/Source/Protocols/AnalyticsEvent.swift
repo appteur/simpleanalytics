@@ -49,10 +49,18 @@ public extension AnalyticsEvent {
         return dict
     }
     
-    func toString() -> String {
+    func toFBString() -> String {
         var stringVers = "\(category)-\(action)-\(label)"
         if let value = value {
             stringVers = stringVers+"-"+String(describing:value)
+        }
+        return stringVers
+    }
+    
+    func toString() -> String {
+        var stringVers = "\(category):\(action):\(label)"
+        if let value = value {
+            stringVers = stringVers+":"+String(describing:value)
         }
         return stringVers
     }
