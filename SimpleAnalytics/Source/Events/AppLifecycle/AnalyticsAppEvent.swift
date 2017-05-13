@@ -37,13 +37,13 @@ public enum AnalyticsAppEvent: AnalyticsEvent {
         case .didLaunch:
             return "Launched"
         case .willResignActive:
-            return "Resigning Active"
+            return "Resigning_Active"
         case .didEnterBackground:
-            return "Entered Background"
+            return "Entered_Background"
         case .willEnterForeground:
-            return "Entering Foreground"
+            return "Entering_Foreground"
         case .didBecomeActive:
-            return "Became Active"
+            return "Became_Active"
         case .willTerminate:
             return "Terminating"
         case .systemEvent(let name):
