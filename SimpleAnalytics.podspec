@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SimpleAnalytics'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary      	 = "Simple Analytics Library"
   s.description      = "Provides one location to handle passing analytics to any desired analytics platform."
 
